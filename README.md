@@ -1,27 +1,25 @@
-# Wikipedia-like-Encyclopedia
-Wiki CS50.
+# An Wikipedia-like online encyclopedia
 
-This is a project from CS50's Web Programming with Python and JavaScript course
+## Intro
+This is a project from CS50's Web Programming with Python and JavaScript course.
 
-clone this project using ```git clone https://github.com/justinpatel/Wikipedia-like-Encyclopedia.git``` command into a folder you want to.
+In the distribution code is a Django project called wiki that contains a single app called encyclopedia.
 
-go to that folder and open cmd
-hit ```python manage.py runserver```
-Open up the link of localhost url into a browser
 
-You'll see the sidebar containing Search, Create a new page and Random page options and in the main area you'll see the title of all pages.you can click on any of these pages and it will direct you to the page displaying the content of the title.
-You can add your own page by going into create new page. Random Page will simply return the one of the pages from all pages.
+You'll see the sidebar containing:
+- Search: 
+  - Allow the user to type a query into the search box in the sidebar to search for an encyclopedia entry.
+  - If the query matches the name of an encyclopedia entry, the user should be redirected to that entry’s page.
+  - If the query does not match the name of an encyclopedia entry, the user should instead be taken to a search results page that displays a list of all encyclopedia entries that have the query as a substring.
 
-Any help on implementing the Search and Edit function of the Web-app would be appreciated.
+- Create
+  - You can add new page.
 
-CS50 project 1
-An online encyclopedia
-Visit /wiki/TITLE to view an encyclopedia entry
+- Random page 
+  - Will simply return a random page from all pages. 
+  
+In the main area you'll see the title of all pages. You can click on any of these pages and it will direct you to the page displaying the content of the title.
 
-Create a new entry or edit the previous ones
+Entries are stored using Markdown (a markup language), which makes entries more human-friendly to write and edit. It is converted into HTML before displaying it to the user.
 
-Each encyclopedia entry will be saved as a Markdown file inside of the entries/ directory
-
-Made using
-Django 3.0.2
-Markdown
+<a href="https://wiki-like.herokuapp.com/">Live Demo</a>
