@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Result
+{% endblock %}
+
+{% block body %}
+    <h1 class="text-center" style="color:#2F4F4F">{% if not match %}NO {% endif %}Search Result</h1>
+
+   {% if match %}
+    <div class="list-group list-group-flush">
+        {% for matchitem in match %}
+        <a class="list-group-item list-group-item-action text-center" href="{% url 'entry' matchitem %}">
+                <h2 style="color:black" >{{ matchitem }}</h2>
+        </a>
+
+        {% endfor %}
+    </div>
+    {% else %}
+    <h3 class="text-center">You are Welcome to Create One</h3>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+
+        <ul class="title-display">
+        {% if entry %}
+            <h2>{{ entry|safe  }}</h2><br>
+
+        </ul>
+        <hr style="width: 84%; position: absolute;"><br>
+            <a href="{% url 'edit' title %}">
+                <button class="btn btn-outline-dark btn-edit">Edit This Page</button>
+            </a>
+
+        {% else %}
+            <h2>Title not Available, You can add one</h2>
+        {% endif %}
+    
+
+{% endblock %}

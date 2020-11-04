@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Conflict Title
+{% endblock %}
+{% block body %}
+    <div class="w-75">
+    <h1 class="text-center" style="color:#2F4F4F">
+        Title already exists</h1>
+    </div>
+
+    <p class="alert alert-danger w-75">
+        <strong>The title you are creating already exists!</strong><br>
+        You can edit an existing title, but not create an identical title.<br>
+        To edit this title, click "edit title" on the specific title page.
+    </p>
+
+    <div class="list-group-item list-group-item-action text-center w-75">
+        <a href="{% url 'entry' title %}"><h4 style="color:black" >{{ title }}</h4></a>
+    </div>
+
+{% endblock %}

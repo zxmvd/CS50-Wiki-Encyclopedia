@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+/* sidebar search input box styling */
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+textarea {
+    width: 80%;
+}
+.title-display {
+    width: 85%;
+    padding-right: 40px;
+    background-color:#F9F9F9;
+    margin-bottom: 0px;
+}
+.main {
+    padding: 10px;
+}
+
+.btn-edit {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #2F4F4F;
+	height: 100vh;
+    padding: 20px;
+}
+
+.side-list-item {
+    background-color: #2F4F4F;
+    font-weight: bolder;
+
+}
+
+.btn-outline-light:hover {
+    background-color: #264040;
+}
+.btn-outline-dark:hover {
+    background-color: #264040;
+}
+
+.list-group-item:hover {
+    background-color:#f2f2f2;
+
+}
+.side-list-item:hover {
+    background-color: #264040;
+}
+
+/* style side bar "WIKI" logo with google font */
+.display-1 {
+    font-family: 'Almendra Display'; 
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+.list-group-item a {
+    color: white;
+
+}
+.sidebar h2 {
+    margin-top: 5px;
+    color: black;
+}
