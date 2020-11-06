@@ -9,13 +9,12 @@
         Edit the Title Content</h1>
     </div>
 
-    <form action="{% url 'edit' title %}" method="post">
+    <form class="form-group" action="{% url 'edit' title %}" method="post">
         {% csrf_token %}
         <div class="">
             <textarea class="form-control w-75" rows="15" name="newContent">{{ content }}</textarea><br>
-            <button type="submit" class="btn btn-outline-dark">Submit Content</button>
+            <button type="submit" class="btn btn-outline-dark btn-submmit-edit">Submit Content</button>
         </div>
-
     </form>
 
 

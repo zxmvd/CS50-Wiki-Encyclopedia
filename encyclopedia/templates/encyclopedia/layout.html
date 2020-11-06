@@ -11,24 +11,30 @@
         <link rel="shortcut icon" href="{% static 'encyclopedia/favicon.ico' %}">
     </head>
     <body>
-        <div class="row">
-            <div class="sidebar sticky-top col-lg-3 col-md-3">
-                <a href="{% url 'index' %}">
-                    <img title="wiki clone" class="mx-auto d-block" width="180" src="{% static 'encyclopedia/w_logo.png' %}">
-                </a>
-                <h2 class="display-1 text-center"><a>WIKI</a></h2>
-                <form action="{% url 'search' %}" method="post">
-                    <div class="input-group"> 
-                            {% csrf_token %}
-                            {{ form }}                   
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-outline-light">SEARCH</button>
-                        </div>
+		<div class="container-fluid">
+			<div class="row">
+            	<div class="sidebar sticky-top col-lg-3 col-md-12 col-sm-12">
+                <div class="logo_text">
+                    <a href="{% url 'index' %}">
+                        <img title="wiki clone" class="mx-auto d-block logo" width="180" src="{% static 'encyclopedia/w_logo.png' %}">
+                    </a>
+                    <h2 class="display-1 text-center"><a>WIKI</a></h2>
+                </div>
 
-                    </div>
+                <div class="search_form">
+                    <form action="{% url 'search' %}" method="post">
+                        <div class="input-group"> 
+                                {% csrf_token %}
+                                {{ form }}                   
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-outline-light">SEARCH</button>
+                            </div>    
+                        </div>    
+                    </form><br>
+                </div>
+ 
 
-                </form><br>
-                <div class="list-group text-center">
+                <div class="list-group text-center btn-group">
                     <div class="list-group-item list-group-item-action side-list-item">
                         <a href="{% url 'index' %}" >Home</a>
                     </div>
@@ -41,11 +47,12 @@
                 </div>
             </div>
 
-            <div class="main col-lg-9 col-md-9">
+            <div class="main col-lg-9 col-md-12 col-sm-12">
                 {% block body %}
                 {% endblock %}
             </div>
-        </div>
-
+		
+		</div>
+		</div>
     </body>
 </html>

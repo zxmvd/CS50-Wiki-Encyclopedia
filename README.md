@@ -1,6 +1,6 @@
 # An Wikipedia-like online encyclopedia
 
-<a href="https://wiki-like.herokuapp.com/">Live Demo</a>
+<a href="https://wiki-like.herokuapp.com/" target="_blank">Live Demo</a>
 ## Intro
 This is a project from CS50's Web Programming with Python and JavaScript course.
 
@@ -23,3 +23,7 @@ In the main area you'll see the title of all pages. You can click on any of thes
 
 Entries are stored using Markdown (a markup language), which makes entries more human-friendly to write and edit. It is converted into HTML before displaying it to the user.
 
+ - In encyclopedia/urls.py the URL configuration for this app is defined.
+ - In encyclopedia/views.py functions will return results to the web browser.
+ - In encyclopedia/templates/encyclopedia/ are templates inheriting from a base layout.html file.
+ - CSS is in encyclopedia/static/encyclopedia/.

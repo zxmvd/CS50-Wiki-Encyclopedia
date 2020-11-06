@@ -12,24 +12,28 @@ h1 {
     padding-top: 20px;
 }
 
+
 /* sidebar search input box styling */
 .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-
+/* set text box width on editing page */
 textarea {
     width: 80%;
 }
+
+/* title display page styling */
 .title-display {
     width: 85%;
     padding-right: 40px;
     background-color:#F9F9F9;
     margin-bottom: 0px;
 }
+
 .main {
-    padding: 10px;
+    padding: 0px;
 }
 
 .btn-edit {
@@ -62,12 +66,17 @@ textarea {
     background-color: #264040;
 }
 
+ /* title list shadow effect when hover */
 .list-group-item:hover {
     background-color:#f2f2f2;
-
+	box-shadow: 0 2px 5px 5px rgba(111, 104, 104, 0.1), 0 -2px 5px 5px rgba(100, 100, 132, 0.1);
+	transition: 1s;
 }
+
+
 .side-list-item:hover {
     background-color: #264040;
+	box-shadow: none;
 }
 
 /* style side bar "WIKI" logo with google font */
@@ -77,11 +86,81 @@ textarea {
     font-weight: bolder;
 }
 
+/* side bar buttons */
 .list-group-item a {
     color: white;
-
+	text-decoration-line: none;
 }
+
+
 .sidebar h2 {
     margin-top: 5px;
     color: black;
 }
+
+.form-group, .title-display, hr {
+	margin-left: 15px;
+}
+
+@media only screen and (max-width: 980px) {
+    div.sidebar {
+        height: 30%;
+        padding: 40px;
+    
+    }
+    .search_form {
+        width: 50%;
+        float: right;
+        margin-top: 120px;
+        margin-right: 40px;
+    }
+
+    .logo_text {
+        margin: 40px 0px 40px 40px;
+        float: left;
+        width: 30%;
+    }
+
+    .list-group {
+        width: 100%;
+        text-align: center;
+    }
+
+    .list-group-item {
+        width: auto;
+        border: hidden;
+        margin: auto;
+        border-bottom: 1px solid rgba(0,0,0,.25);
+    }
+
+    .btn-group {
+        flex-direction: row;
+
+    }
+    div>a, h4 {
+        font-size: 2.5rem;
+    }
+
+    .title-display {
+        margin: auto;
+        margin-bottom: 0px;
+        font-size: 46px;
+    }
+
+    .btn {
+        margin-left: 8%;
+    }
+
+    .w-75 {
+        width: 90%!important;
+        margin: auto;
+    }
+    label {
+        margin-left: 10%;
+    }
+
+    .sticky-top {
+        position: relative;
+    }
+
+  }
