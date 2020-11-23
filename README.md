@@ -23,7 +23,7 @@ In the main area you'll see the title of all pages. You can click on any of thes
 
 Entries are stored using Markdown (a markup language), which makes entries more human-friendly to write and edit. It is converted into HTML before displaying it to the user.
 
- - In encyclopedia/urls.py the URL configuration for this app is defined.
- - In encyclopedia/views.py functions will return results to the web browser.
- - In encyclopedia/templates/encyclopedia/ are templates inheriting from a base layout.html file.
- - CSS is in encyclopedia/static/encyclopedia/.
+ - In <a href="encyclopedia/urls.py">encyclopedia/urls.py</a> the URL configuration for this app is defined.
+ - In <a href="encyclopedia/views.py">encyclopedia/views.py</a> functions will return results to the web browser.
+ - In <a href="encyclopedia/templates/encyclopedia">encyclopedia/templates/encyclopedia/</a> are templates inheriting from a base layout.html file.
+ - CSS is in <a href="encyclopedia/static/encyclopedia/styles.css">encyclopedia/static/encyclopedia/</a>.
