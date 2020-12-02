@@ -32,9 +32,8 @@ def get_entry(title):
     entry exists, the function returns None.
     """
     try:
-        f = default_storage.open(f"entries/{title}.md")
-        # f2 = markdown_path(entries/{title}.md)
+        # f = default_storage.open(f"entries/{title}.md")
+        f = default_storage.open("entries/css.md")
         return f.read().decode("utf-8")
-        # return f2
     except FileNotFoundError:
         return None
