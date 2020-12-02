@@ -45,7 +45,7 @@ def search(request):
             for item in list:
                 # If the query matches the name of an entry, redirect to entry page :
                 if keyword.lower() == item.lower():
-                    return HttpResponseRedirect(reverse('entry', kwargs={'title': keyword}))
+                    return HttpResponseRedirect(reverse('entry', kwargs={'title': item}))
                 # If the query matches the title partially,
                 # list the titles have the query as a substring. 
                 else:
